@@ -59,9 +59,11 @@ $(document).ready(function() {
                 } else {
                     color = "green";
                 }
-
+                
                 // create html tag for the rating
-                $("#answers").append(`<p id="rating" style="color: ${color}">${entry[2]}</p>`);
+                $("#answers").append(`<p id="rating" style="color: ${color}">${entry[2]}
+                <h5 id='numReviews' style="color: black">${entry[3]}</h5><hr></p>`);
+                //$("#answers").append(`<h6 id='numReviews' style="color: ${color}">${entry[3]}</h6>`);
             }
         } else {
             $("#answers").empty();
