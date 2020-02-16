@@ -1,0 +1,17 @@
+body {
+    /*width:;*/
+    background-color: grey;
+    font-size: 10px;
+    font-family: Futura, "Trebuchet MS", Arial ;
+}
+
+#startpage {
+
+}
+#name {
+    font-size: 15pt;
+}
+
+#jointext {
+    color: black;
+}
