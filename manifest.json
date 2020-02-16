@@ -1,11 +1,10 @@
 {
   "manifest_version": 2,
-
   "name": "Search",
   "description": "Gets value from textbox",
   "version": "1.0",
   "browser_action": {
-    "default_icon": "Seattle_redhawks_logo.png",
+    "default_icon": "./assets/Seattle_redhawks_logo.png",
     "default_popup": "popup.html"
   },
   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
