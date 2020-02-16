@@ -6,6 +6,7 @@ $(document).ready(function () {
 
     function getresults() {
         var input = $("#name_textbox").val();
+        input = input.toLowerCase();
         console.log(input);
         var txt = new XMLHttpRequest();
         txt.open("GET", 'data.txt', true);
