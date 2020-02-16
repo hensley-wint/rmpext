@@ -28,7 +28,16 @@
         document.getElementById('ok_btn').addEventListener('click',
             function() { myAction(document.getElementById('name_textbox'));
             });
+
+        document.getElementById('name_textbox').addEventListener('keydown',
+            function(event) {
+                if(event.keyCode === 13){
+                    myAction(document.getElementById('name_textbox'));
+                }
+            });
     }
+
+
     function showoutput(matches){
 
         // check if matches were found or not
