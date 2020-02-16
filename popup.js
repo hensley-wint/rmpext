@@ -26,7 +26,7 @@ $(document).ready(function() {
     });
 
     function showoutput(matches){
-
+        console.log(matches);
         // check if matches were found or not
         if (matches && matches.length) {
             $("#noanswers").hide();
