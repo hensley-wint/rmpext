@@ -63,7 +63,7 @@ $(document).ready(function () {
                 }
 
                 // create html tag for the rating
-                $("#answers").last().append(`<div id="rating" style="color: ${color}">${entry[2]}</div>`);
+                $("#answers").append(`<div id="rating" style="color: ${color}">${entry[2]}</div>`);
             }
         } else {
             $("#answers").empty();
