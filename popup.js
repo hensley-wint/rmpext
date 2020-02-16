@@ -1,29 +1,33 @@
 $(document).ready(function() {
 
-    $("#ok_btn").click(function() {
-            var input = $("#name_textbox").val();
-            console.log(input);
-            var txt = new XMLHttpRequest();
-            txt.open("GET", 'data.txt', true);
-            txt.send(null);
-            txt.onreadystatechange=function() {
-                if (txt.readyState==4 && txt.status==200) {
-                    let result = txt.responseText;
-
-                    var search_lname = input;
-                    lines = result.split("\n");
-                    var matches = [];
-                    for (var i = 0 ; i < lines.length ; i++){
-                        var entry = lines[i].split(",");
-
-                        if (search_lname == entry[1]) {
-                            matches.push(entry);
-                        };
-                    };
-                    showoutput(matches);
-                };
-            };
+    $("#ok_btn").click(function (){
+        getresults();
     });
+
+    function getresults(){
+        var input = $("#name_textbox").val();
+        console.log(input);
+        var txt = new XMLHttpRequest();
+        txt.open("GET", 'data.txt', true);
+        txt.send(null);
+        txt.onreadystatechange=function() {
+            if (txt.readyState==4 && txt.status==200) {
+                let result = txt.responseText;
+
+                var search_lname = input;
+                lines = result.split("\n");
+                var matches = [];
+                for (var i = 0 ; i < lines.length ; i++){
+                    var entry = lines[i].split(",");
+
+                    if (search_lname == entry[1]) {
+                        matches.push(entry);
+                    };
+                };
+                showoutput(matches);
+            };
+        };
+    };
 
     function showoutput(matches){
         console.log(matches);
