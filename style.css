@@ -11,6 +11,9 @@ body {
 #name {
     font-size: 15pt;
 }
+#rating {
+    font-size: 20pt;
+}
 
 #jointext {
     color: black;
