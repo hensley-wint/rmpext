@@ -96,7 +96,9 @@
             document.getElementById('noanswers').style.padding = "15px 0px 0px 0px";
         }
     }
-}//     // document.addEventListener('DOMContentLoaded', documentEvents, false);
+
+});
+//     // document.addEventListener('DOMContentLoaded', documentEvents, false);
 //
 //     function myAction(input) {
 //         var txt = new XMLHttpRequest();
