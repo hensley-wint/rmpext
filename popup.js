@@ -30,6 +30,25 @@
         document.getElementById('ok_btn').addEventListener('click',
             function() { myAction(document.getElementById('name_textbox'));
             });
+        /*
+        var input = document.getElementById("myInput");
+        input.addEventListener("keydown",
+        function() { 
+            if(event.keyCode === 13){
+                myAction(document.getElementById('name_textbox'));
+            }
+        });
+        
+        var input = document.getElementById('ok_btn');
+        input.addEventListener("keydown",
+        function(event) { 
+            console.log("right there");
+            if(event.keyCode === 13){
+                console.log("hello world");
+                myAction(document.getElementById('name_textbox'));
+            }
+        });
+        */
     }
     function showoutput(matches){
 
