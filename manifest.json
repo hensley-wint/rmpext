@@ -7,6 +7,7 @@
 
 
   "browser_action": {
+    "default_icon": "Seattle_redhawks_logo.png",
     "default_popup": "popup.html"
   }
 }
