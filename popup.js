@@ -50,8 +50,7 @@
 
         // check if matches were found or not
         if (matches && matches.length) {
-            document.getElementById('noanswers').innerText = ""
-            document.getElementById('noanswers').style.padding = "0px 0px 0px 0px";
+            $("#noanswers").hide();
 
             var answers = document.getElementById('answers');
             for ( var i = 0; i<matches.length; i++) {
