@@ -51,7 +51,7 @@
         if (3.0 >= rating) {
             document.getElementById('rating').style.color = "red";
         } else if (4.0 >= rating) {
-            document.getElementById('rating').style.color = "yellow";
+            document.getElementById('rating').style.color = "#FFC840";
         } else {
             document.getElementById('rating').style.color = "green";
         }
