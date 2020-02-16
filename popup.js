@@ -38,7 +38,7 @@ $(document).ready(function () {
         if (matches && matches.length) {
             $("#noanswers").hide();
 
-            for ( var i = 0; i<matches.length; i++) {
+            for (var i = 0; i < matches.length; i++) {
                 // get one entry at a time
                 var entry = matches[i];
                 // break up the names and capitalize them
@@ -63,7 +63,7 @@ $(document).ready(function () {
                 }
 
                 // create html tag for the rating
-                $("#answers").append(`<p id="rating" style="color: ${color}">${entry[2]}</p>`);
+                $("#answers").last().append(`<div id="rating" style="color: ${color}">${entry[2]}</div>`);
             }
         } else {
             $("#answers").empty();
