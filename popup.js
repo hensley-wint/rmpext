@@ -35,14 +35,23 @@
                     myAction(document.getElementById('name_textbox'));
                 }
             });
+
+        document.getElementById('clear_btn').addEventListener('click', function() { clearresults() });
     }
 
+    function clearresults() {
+        document.getElementById('answers').innerHTML = "";
+        document.getElementById('noanswers').innerText = "";
+        document.getElementById('noanswers').style.padding = "0px 0px 0px 0px";
+
+    }
 
     function showoutput(matches){
 
         // check if matches were found or not
         if (matches && matches.length) {
             document.getElementById('noanswers').innerText = ""
+            document.getElementById('noanswers').style.padding = "0px 0px 0px 0px";
 
             var answers = document.getElementById('answers');
             for ( var i = 0; i<matches.length; i++) {
@@ -83,7 +92,8 @@
         } else {
             // clear answers and add not found text
             document.getElementById('answers').innerHTML = "";
-            document.getElementById('noanswers').innerText = "Not found"
+            document.getElementById('noanswers').innerText = "Not found";
+            document.getElementById('noanswers').style.padding = "15px 0px 0px 0px";
         }
     }
 }
