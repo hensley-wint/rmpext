@@ -64,6 +64,12 @@ $(document).ready(function() {
 
         };
     };
+    // clear button
+    $("#clear_btn").click(function () {
+        $("#answers").empty();
+        $("#noanswers").hide();
+        $("#name_textbox").val("");
+    });
 
         }
     }
