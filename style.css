@@ -1,32 +1,43 @@
 body {
-    /*width:;*/
     background-color: rgb(255, 255, 255);
     font-size: 10px;
-    font-family: Futura, "Trebuchet MS", Arial ;
+    font-family: Futura, "Trebuchet MS", Arial;
     text-align: center;
 }
 
-#startpage {
-
-}
 #name {
     font-size: 15pt;
+    /*float: left;*/
+    padding: 0px 0px 0px 0px;
 }
+
 #rating {
     font-size: 20pt;
+    padding: 0px 0px 0px 0px;
+}
+button{
+    font-size: 10px;
+}
+
+#ok_btn {
+    float: left;
+    width: 50%;
 }
 
 #clear_btn {
     float: right;
+    width: 50%;
 }
 
 #noanswers {
     font-size: 15pt;
-    padding: 0px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
 }
-#images{
+
+#images {
     padding-bottom: 50px;
 }
+
 #suIcon {
     float: left;
     width: 50px;
