@@ -5,9 +5,7 @@ $(document).ready(function () {
     });
 
     function getresults() {
-        var input = $("#name_textbox").val();
-        input = input.toLowerCase();
-        console.log(input);
+
         var txt = new XMLHttpRequest();
         txt.open("GET", 'data.txt', true);
         txt.send(null);
@@ -15,8 +13,8 @@ $(document).ready(function () {
             if (txt.readyState == 4 && txt.status == 200) {
                 let result = txt.responseText;
 
-                var search_lname = input;
                 lines = result.split("\n");
+                var search_lname = $("#name_textbox").val().toLowerCase();
                 var matches = [];
                 for (var i = 0; i < lines.length; i++) {
                     var entry = lines[i].split(",");
