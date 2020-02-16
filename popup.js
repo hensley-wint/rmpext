@@ -39,6 +39,10 @@ $(document).ready(function () {
             $("#noanswers").hide();
 
             for (var i = 0; i < matches.length; i++) {
+                if ($("#answers").html() != ""){
+                    $("#answers").append('<hr>');
+                }
+
                 // get one entry at a time
                 var entry = matches[i];
                 // break up the names and capitalize them
@@ -65,7 +69,6 @@ $(document).ready(function () {
                 // create html tag for the rating
                 $("#answers").append(`<div id="rating" style="color: ${color}">${entry[2]}</div>`);
                 $("#answers").append(`<div id='numReviews' style="color: black">${entry[3]}</div>`);
-                $("#answers").append('<hr>');
 
             }
         } else {
