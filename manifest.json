@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Search",
-  "description": "Gets value from textbox",
+  "name": "Rate My Professor Extension",
+  "description": "Get professor ratings for Seattle University",
   "version": "1.0",
   "browser_action": {
     "default_icon": "Seattle_redhawks_logo.png",
