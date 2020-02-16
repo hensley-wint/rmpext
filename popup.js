@@ -64,6 +64,9 @@ $(document).ready(function () {
 
                 // create html tag for the rating
                 $("#answers").append(`<div id="rating" style="color: ${color}">${entry[2]}</div>`);
+                $("#answers").append(`<h5 id='numReviews' style="color: black">${entry[3]}</h5>`);
+                $("#answers").append('<hr>');
+
             }
         } else {
             $("#answers").empty();
