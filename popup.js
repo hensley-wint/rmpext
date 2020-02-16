@@ -78,13 +78,6 @@
                 namediv.id = 'name';
                 answers.appendChild(namediv);
 
-                // // create html tag for the middle text
-                // var joiningtextdiv = document.createElement("p");
-                // joiningtextdiv.id = "jointext";
-                // var node = document.createTextNode("rating:");
-                // joiningtextdiv.appendChild(node)
-                // answers.appendChild(joiningtextdiv);
-
                 // create html tag for the rating
                 var ratingresult = document.createElement("p");
                 ratingresult.id = 'rating';
