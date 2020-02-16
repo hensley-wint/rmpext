@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Search",
-  "description": "Gets value from textbox",
+  "name": "SU Rate My Prof extension",
+  "description": "Easily find your Professor's rating while registering for classes.",
   "version": "1.0",
   "browser_action": {
     "default_icon": "./assets/Seattle_redhawks_logo.png",
