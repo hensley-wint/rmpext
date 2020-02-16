@@ -49,7 +49,7 @@ $(document).ready(function () {
                 lastname = lastname.charAt(0).toUpperCase() + lastname.substring(1);
                 var name = firstname + " " + lastname;
 
-                $("#answers").append(`<p id='name'> ${name} <p>`);
+                $("#answers").append(`<div id='name'> ${name} </div>`);
 
                 // convert rating string to a number for comparison
                 var rating = parseFloat(entry[2]);
