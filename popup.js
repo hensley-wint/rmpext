@@ -39,6 +39,10 @@ $(document).ready(function () {
             $("#noanswers").hide();
 
             for (var i = 0; i < matches.length; i++) {
+                if ($("#answers").html() != ""){
+                    $("#answers").append('<hr>');
+                }
+
                 // get one entry at a time
                 var entry = matches[i];
                 // break up the names and capitalize them
@@ -64,8 +68,16 @@ $(document).ready(function () {
 
                 // create html tag for the rating
                 $("#answers").append(`<div id="rating" style="color: ${color}">${entry[2]}</div>`);
+
+                // remove s from  ratings if there is only one rating
+                var num_ratings = entry[3];
+                var num = parseInt(entry[3].split(" ")[0], 10);
+                if (num == 1){
+                    entry[3] = entry[3].substring(0,(entry[3].length-1));
+                }
+
+
                 $("#answers").append(`<div id='numReviews' style="color: black">${entry[3]}</div>`);
-                $("#answers").append('<hr>');
 
             }
         } else {
