@@ -90,10 +90,8 @@
                 answers.appendChild(ratingresult);
             }
         } else {
-            // clear answers and add not found text
-            document.getElementById('answers').innerHTML = "";
-            document.getElementById('noanswers').innerText = "Not found";
-            document.getElementById('noanswers').style.padding = "15px 0px 0px 0px";
+            $("#noanswers").show()
+
         }
     }
 
