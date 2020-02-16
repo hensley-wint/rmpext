@@ -75,10 +75,15 @@ $(document).ready(function() {
         $("#name_textbox").val("");
     });
 
-        }
-    }
-
+    // press enter button to get results
+    $("#name_textbox").on("keydown", function (event) {
+        if (event.key === "Enter"){
+            getresults();
+        };
+    });
 });
+
+
 //     // document.addEventListener('DOMContentLoaded', documentEvents, false);
 //
 //     function myAction(input) {
